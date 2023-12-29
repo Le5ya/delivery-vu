@@ -29,7 +29,7 @@
           class="products-card"
           v-for="rest in restArrey"
           :key="rest.id"
-					:to="`?id=${rest.id}`"
+					:to="`/rest?id=${rest.id}`"
         >
           <div class="products-card__image">
             <img :src="getUrl(rest.image)" alt="rest" />
